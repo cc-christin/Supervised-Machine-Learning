@@ -28,6 +28,15 @@ Predicted Best Model Before Scaling: Random Forest Classifier
 * How does that compare to your prediction? Write down your results and thoughts.
     * Matched predictions as there were conscerns about logistic regression being over-fitted and not affected by scaling. 
 
+### Before Scaling Results
+#### Logistic Regression model
+Training Data Score: 0.6977011494252874
+Testing Data Score: 0.5642279880901744
+
+#### Random Forest Classifier model
+Training Data Score: 1.0
+Testing Data Score: 0.5642279880901744
+
 ## Revisit the Preprocessing: Scale the data
 * Use `StandardScaler` to scale the training and testing sets. 
 * Before re-fitting the LogisticRegression and RandomForestClassifier models on the scaled data, make another prediction about how you think scaling will affect the accuracy of the models.
@@ -38,6 +47,16 @@ Predicted Best Model After Scaling: Logistic Regression
 logistic regression is dependent on scaling to make more accurate calculations, while the random forest classifier does not. Therefore, it would be reasonable to predict that logistic regression would be the better model to utilize after scaling.  
 
 ### Fit and score the LogisticRegression and RandomForestClassifier models on the scaled data.
+
+### After Scaling Results
+#### Logistic Regression model
+Training Data Score: 0.712807881773399
+Testing Data Score: 0.719906422798809
+
+#### Random Forest Classifier model
+Training Data Score: 1.0
+Testting Data Score: 0.6371756699276904
+
 #### Questions
 
 * How do the model scores compare to each other, and to the previous results on unscaled data? 
@@ -50,5 +69,7 @@ As predicted, the random forest classifier model was overfitted even after scali
 After scaling, it was still over fitted with testing score of 0.63 and accuracy score of 1.0. 
 The Logistic Regression, contrastingly, improved after scaling from 0.56 and 0.70, testing and training score respectively to a testing score of 0.72 and training score of 0.71. 
 In conclusion, logistic regression model, after appropriate scaling, would be the better and preferred model for this credit risk evaluation dataset.   
+
+
 
 
